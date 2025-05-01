@@ -8,20 +8,33 @@ html {
   scroll-behavior: smooth;
 }
 
+.container{
+  width: 95%;
+  margin: auto;
+}
+
 body{
+  /* width: 95%;
+  margin: auto; */
   font-family: "Inter", sans-serif !important;
 }
 
 main {
-  margin-left: 40px;
-  margin-right: 170px;
-  margin-top: 20px;
+  /* margin-left: 40px; */
+  /* margin-right: 170px; */
+  margin-top: -35px;
+  display: flex;
+  /* top: -20px; */
+  /* gap: 300px; */
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* margin-top: 20px; */
 }
 
 /* .menu{
@@ -49,10 +62,10 @@ ul {
 }
 
 .frame {
-  width: 431;
-  height: 331;
+  /* width: 431;
+  height: 331; */
   margin-top: 70px;
-  margin-left: 100px;
+  /* margin-left: 50px; */
   font-family: Work Sans;
   font-weight: 500;
   font-size: 16px;
@@ -89,15 +102,23 @@ ul {
   padding-left: 6px;
 }
 
+#menu2{
+  display: none;
+}
+
 .frame2 {
-  width: 500px;
-  height: 429px;
+  width: 450px;
+  /* height: 429px; */
   /* top: 12px;
   left: 747px; */
   background: rgba(51, 51, 51, 0.06);
-  /* margin-top: -400px; */
-  margin-left: 780px;
-  margin-bottom: -420px;
+  /* margin-top: 50px; */
+  /* margin-left: 250px; */
+  /* margin-bottom: -420px; */
+}
+
+.frame2 img {
+  width: 100%;
 }
 
 /* #frame2{
@@ -120,6 +141,7 @@ aside {
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #features {
@@ -197,7 +219,7 @@ section {
 .features2 {
   display: flex;
   gap: 250px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   /* margin-left: 300px; */
   /* gap: 200px; */
@@ -205,7 +227,7 @@ section {
 
 article {
   margin-top: 90px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   display: flex;
   gap: 150px;
 }
@@ -333,7 +355,7 @@ article {
 .article1 {
   margin-top: 60px;
   background: rgba(51, 51, 51, 1);
-  height: 600px;
+  /* height: 600px; */
   margin-bottom: 30px;
   margin-left: 0;
 }
@@ -398,15 +420,15 @@ a{
   text-decoration: none;
 }
 
-section {
+/* section {
   margin-left: 120px;
   margin-right: 120px;
-}
+} */
 
-.faq {
+/* .faq {
   margin-left: 120px;
   margin-right: 120px;
-}
+} */
 
 .faq1 {
   margin-bottom: 30px;
@@ -416,7 +438,7 @@ section {
 #faq2 {
   font-family: Work Sans;
   font-weight: 700;
-  font-size: 57.53px;
+  font-size: 31.53px;
   line-height: 109.3px;
   letter-spacing: -5%;
   text-align: center;
@@ -443,8 +465,9 @@ section {
 .ffaq2 {
   font-family: Work Sans;
   font-weight: 400;
-  font-size: 25.89px;
+  font-size: 15.89px;
   line-height: 41.71px;
+  /* margin-top: 10px; */
   letter-spacing: 0%;
   text-align: center;
 }
@@ -537,11 +560,13 @@ section {
 
 .faq7 {
   margin-top: 50px;
-  /* text-align: center; */
-  margin-bottom: 70px;
+  text-align: center;
+  /* margin-bottom: 30px; */
+  width: 300px;
+  margin:30px  auto;
   background: rgba(0, 59, 115, 1);
-  margin-left: 350px;
-  margin-right: 360px;
+  /* margin-left: 350px; */
+  /* margin-right: 292px; */
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
@@ -630,6 +655,7 @@ footer {
 .con-footer {
   margin-left: 120px;
   margin-top: 21px;
+  display: block;
 }
 
 .con1 {
@@ -659,4 +685,98 @@ footer {
 
 #connn2{
   margin-left: 110px;
+  display: block;
+}
+
+
+@media (max-width: 824px) {
+
+  .menu{
+    display: none;
+  }
+
+  #menu2{
+    display: block;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  .frame2{
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .features2{
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  article{
+    flex-direction: column;
+  }
+
+  #faq2{
+    line-height: 0;
+  }
+
+  .faq3{
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .faq4{
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .faq5{
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  footer{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sec-footer{
+    flex-direction: column;
+    margin-left: 100px;
+    gap: 20px;
+  }
+
+  #connn2{
+    display: none;
+  }
+
+  .con-footer{
+    margin-bottom: 30px;
+    display: none;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  /* aside{
+    margin-left: -73px;
+  } */
+
+  /* .Dynamic-QRcode1{
+    margin-left: -73px;
+  }
+
+  .Scan-tracking1{
+    margin-left: -73px;
+  }
+
+  .Export-hign1{
+    margin-left: -73px;
+  } */
 }
